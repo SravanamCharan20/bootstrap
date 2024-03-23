@@ -58,18 +58,18 @@
     
           </div>
           <div class="form-group">
-            <label for="domain">Your interested domain<span class="text-danger">*</span></label class="text-h5">
-            <input class="form-control form-control-sm" list="domain-list" id="domain" placeholder="Type to Search.."/>
-            <datalist id="domain-list">
-              <option value="Front-End Web Development">
-              <option value="Back-End Web Development">
-              <option value="Data Science">
-              <option value="Artificial Intelligence">
-              <option value="Machine Learning">
-              <option value="Software Engineering">
-              <option value="IOT">
-            </datalist>
-          </div>
+            <label for="domain">Your interested domain<span class="text-danger">*</span></label>
+            <select class="form-control" id="domain" required>
+                <option value="" disabled selected>Select your domain</option>
+                <option value="Front-End Web Development">Front-End Web Development</option>
+                <option value="Back-End Web Development">Back-End Web Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="IOT">IOT</option>
+            </select>
+        </div>
           <div class="form-group">
             <label for="files">Upload your resume,portfolio<span class="text-danger small">*</span></label class="text-h5">
             <input class="form-control form-control-lg" type="file" id="files" multiple/>
